@@ -214,7 +214,7 @@ class VideoPlayerController extends ValueNotifier<VideoPlayerValue> {
         };
         break;
       case DataSourceType.network:
-        dataSourceDescription = <String, dynamic>{'uri': dataSource};
+        dataSourceDescription = <String, dynamic>{'uri': dataSource, 'headers': headers};
         break;
       case DataSourceType.file:
         dataSourceDescription = <String, dynamic>{
